@@ -1,3 +1,25 @@
+## Tic Tac Toe N X N
+
+Made based on the React Tutorial(https://reactjs.org/tutorial/tutorial.html)
+
+Go to "https://yshong211.github.io/tic-tac-toe-0708/" to play the game.
+
+<ul>
+  <li>Added features(changes)</li>
+  <ul>
+    <li>Supports any sizes of the board</li>
+    <li>Can choose how many rows connected leads to win</li>
+  </ul>
+  <li>Improvements</li>
+  <ul>
+    <li>Made separate files for each components</li>
+    <li>Added getDim component which gets inputs from the user</li>
+    <li>Used prettier to make code neat</li>
+    <li>Made functions that works for any board size and any winning number of rows<li>
+  </ul>
+</ul>
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
