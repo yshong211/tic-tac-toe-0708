@@ -1,0 +1,33 @@
+
+input {
+  margin-left: 10px;
+  width: 30px;
+  height: 23px;
+}
+select {
+  margin-left: 8px;
+}
+.submit {
+  display: flex;
+  margin-left: 400px;
+  padding: 3px 5px;
+  font-size: 15px;
+  align-content: center;
+  justify-content: center;
+
+}
+.size {
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+}
+.win {
+  display:flex;
+  font-size: 20px;
+  justify-content: center;
+  align-content: flex-start;
+  padding: 0px;
+  margin-top: 15px;
+  
+}
+

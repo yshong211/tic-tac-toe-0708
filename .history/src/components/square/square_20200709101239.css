@@ -1,0 +1,27 @@
+.square {
+  display: inline-block;
+  background: rgb(255, 255, 255);
+  border: 1px solid #999;
+  float: left;
+  font-size: 60px;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 80px;
+  height: 80px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 80px;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+}
+
+.square:hover {
+  background-color: #e6e6fa;
+}
+.square:active {
+  background-color: #3b3209;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

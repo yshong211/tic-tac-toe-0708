@@ -1,0 +1,7 @@
+{
+  eslint prettier eslint-plugin-prettier eslint-config-prettier eslint-plugin-node eslint-config-node
+    "extends": ["airbnb", "prettier"],
+    "plugins": ["prettier"],
+    "rules": {
+    }
+}
