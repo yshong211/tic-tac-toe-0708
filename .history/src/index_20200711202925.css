@@ -1,0 +1,27 @@
+body {
+  font: 18px 'Century Gothic', Futura, sans-serif; /* size, font */
+  margin: 20px; /* space outside of border */
+  background-color: rgb(126, 162, 230);
+  @media only screen and (min-width:150px) {
+    width: 30%
+  }
+}
+
+ol,
+ul {
+  padding-left: 30px; /* space b/t left border to content */
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+

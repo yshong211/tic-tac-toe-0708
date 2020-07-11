@@ -1,0 +1,11 @@
+.game {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .game-info {
+    margin-left: 20px;
+    width: 150px
+  }
