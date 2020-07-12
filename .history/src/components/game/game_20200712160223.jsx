@@ -130,8 +130,7 @@ export default class Game extends React.Component {
           if (i === y) {
             track = 1;
           }
-        }
-        if (o >= row_length && count >= row_length) {
+        }      if (o >= row_length && count >= row_length) {
           return 'O';
         }
         if (x >= row_length && count >= row_length) {
@@ -141,6 +140,7 @@ export default class Game extends React.Component {
           break;
         }
       }
+
 
       o = 0;
       x = 0;

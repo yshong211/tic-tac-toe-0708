@@ -90,17 +90,16 @@ export default class Game extends React.Component {
             track = 1;
           }
         }
+        if (track === 1) {
+          break;
+        }
         if (o >= row_length && count >= row_length) {
           return 'O';
         }
         if (x >= row_length && count >= row_length) {
           return 'X';
         }
-        if (track === 1) {
-          break;
-        }
       }
-
       o = 0;
       x = 0;
     }
@@ -131,15 +130,16 @@ export default class Game extends React.Component {
             track = 1;
           }
         }
-        if (o >= row_length && count >= row_length) {
-          return 'O';
-        }
-        if (x >= row_length && count >= row_length) {
-          return 'X';
-        }
         if (track === 1) {
           break;
         }
+
+      }
+      if (o >= row_length && count >= row_length) {
+        return 'O';
+      }
+      if (x >= row_length && count >= row_length) {
+        return 'X';
       }
 
       o = 0;
