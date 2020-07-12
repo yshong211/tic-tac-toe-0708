@@ -81,11 +81,13 @@ export default class Game extends React.Component {
           count = 0;
         }
         for (let z = board_rows - 1; z < board_rows ** 2; z += board_rows) {
+
           if (i === z) {
             track = 1;
           }
         }
         for (let y = board_rows * (board_rows - 1); y < board_rows ** 2; y++) {
+ 
           if (i === y) {
             track = 1;
           }
@@ -127,12 +129,13 @@ export default class Game extends React.Component {
         }
         for (let y = board_rows * (board_rows - 1); y < board_rows ** 2; y++) {
           if (i === y) {
-            track = 1;
+            break;
           }
         }
-        if (track === 1) {
-          break;
-        }
+        console.log(count);
+        console.log(row_length);
+        console.log(x);
+        console.log(o);
 
         if (o >= row_length && count >= row_length) {
           return 'O';

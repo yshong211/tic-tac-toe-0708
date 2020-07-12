@@ -66,7 +66,6 @@ export default class Game extends React.Component {
   }
 
   rl_cross(squares, row_length, board_rows, count, x, o) {
-    let track = 0;
     for (let k = 0; k < board_rows ** 2; k++) {
       for (let i = k; i < board_rows ** 2; i += board_rows + 1) {
         if (squares[i] === 'X') {
@@ -80,18 +79,21 @@ export default class Game extends React.Component {
         } else {
           count = 0;
         }
+        console.log(count);
+        console.log(row_length);
+        console.log(x);
+        console.log(o);
         for (let z = board_rows - 1; z < board_rows ** 2; z += board_rows) {
+          console.log('Hi');
           if (i === z) {
-            track = 1;
+            break;
           }
         }
         for (let y = board_rows * (board_rows - 1); y < board_rows ** 2; y++) {
+          console.log('Hi');
           if (i === y) {
-            track = 1;
+            break;
           }
-        }
-        if (track === 1) {
-          break;
         }
         if (o >= row_length && count >= row_length) {
           return 'O';
@@ -106,7 +108,6 @@ export default class Game extends React.Component {
   }
 
   lr_cross(squares, row_length, board_rows, count, x, o) {
-    let track = 0;
     for (let k = board_rows - 1; k < board_rows ** 2; k++) {
       for (let i = k; i < board_rows ** 2; i += board_rows - 1) {
         if (squares[i] === 'X') {
@@ -122,17 +123,18 @@ export default class Game extends React.Component {
         }
         for (let z = board_rows; z < board_rows ** 2; z += board_rows) {
           if (i === z) {
-            track = 1;
+            break;
           }
         }
         for (let y = board_rows * (board_rows - 1); y < board_rows ** 2; y++) {
           if (i === y) {
-            track = 1;
+            break;
           }
         }
-        if (track === 1) {
-          break;
-        }
+        console.log(count);
+        console.log(row_length);
+        console.log(x);
+        console.log(o);
 
         if (o >= row_length && count >= row_length) {
           return 'O';
